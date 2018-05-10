@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/rect"
+		android:padding="8dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<gomocart.application.com.libs.ResizableImageView
+				android:id="@+id/image"
+				android:layout_width="70dp"
+				android:layout_height="70dp"
+				android:src="@drawable/logo_grayscale" />
+
+			<RelativeLayout
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+
+				<customfonts.MyTextView
+					android:id="@+id/title"
+					android:maxLines="2"
+					android:textColor="#000000"
+					android:textSize="@dimen/text"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Lemon peel Base ball"
+					android:layout_alignParentTop="true"
+					android:layout_marginRight="10dp"
+					android:layout_marginLeft="10dp" />
+
+				<customfonts.MyTextView
+					android:id="@+id/last_message"
+					android:textSize="@dimen/textsub"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Last message..."
+					android:layout_below="@+id/title"
+					android:textColor="@color/Tex"
+					android:layout_marginTop="5dp"
+					android:layout_marginRight="26dp"
+					android:layout_marginLeft="10dp"  />
+
+				<customfonts.MyTextView
+					android:id="@+id/tanggal_jam"
+					android:textSize="@dimen/textsub"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="12-08-2017 11:11:00"
+					android:layout_below="@+id/last_message"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:textColor="@color/Tex" />
+
+				<customfonts.MyTextView
+					android:id="@+id/total_unread"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/closestatusbg"
+					android:text="10"
+					android:textColor="@color/white"
+					android:gravity="center"
+					android:layout_alignTop="@+id/tanggal_jam"
+					android:layout_toRightOf="@+id/tanggal_jam"
+					android:textSize="@dimen/textsub"
+					android:paddingRight="5dp"
+					android:paddingLeft="5dp" />
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
+

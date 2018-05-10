@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f2f3f4" >
+
+    <include layout="@layout/toolbar_fragment_payment"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/toolbar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <customfonts.MyTextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran dapat dilakukan melalui."
+                android:textColor="@color/textSub"
+                android:gravity="left"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_below="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp" >
+
+                        <gomocart.application.com.libs.ResizableImageView
+                            android:id="@+id/image_payment_1"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/paypal" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_payment_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_sub_payment_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"></View>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp" >
+
+
+                        <gomocart.application.com.libs.ResizableImageView
+                            android:id="@+id/image_payment_2"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/wallet" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_payment_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_sub_payment_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:paddingTop="23dp"
+                        android:paddingBottom="23dp" >
+
+                        <gomocart.application.com.libs.ResizableImageView
+                            android:id="@+id/image_payment_3"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/paytm_logo" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_payment_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_sub_payment_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider" ></View>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:paddingTop="23dp"
+                        android:paddingBottom="23dp" >
+
+                        <gomocart.application.com.libs.ResizableImageView
+                            android:id="@+id/image_payment_4"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/payu_logo" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_payment_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp" />
+
+                        <customfonts.MyTextView
+                            android:id="@+id/text_sub_payment_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linear1"
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="31dp" >
+
+                <customfonts.MyTextView
+                    android:id="@+id/konfirmasi_pembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KONFIRMASI PEMBAYARAN"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/text"
+                    android:background="@drawable/oneside_roundrect"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

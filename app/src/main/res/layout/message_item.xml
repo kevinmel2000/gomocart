@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+		android:id="@+id/messageTextYou"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp" >
+
+		<com.alexzh.circleimageview.CircleImageView
+			android:id="@+id/imgUserYou"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="5dp"
+			android:src="@drawable/userdefault" />
+
+		<customfonts.MyTextView
+			android:id="@+id/txtKeteranganYou"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:maxWidth="220dp"
+			android:padding="10dp"
+			android:background="@drawable/message_you_bg"
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/imgUserYou"
+			android:text="@string/listdata_alamat"
+			android:textColor="@color/white"
+			android:textSize="@dimen/textsub" />
+
+		<customfonts.MyTextView
+			android:id="@+id/txtPostByYou"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/textSub"
+			android:textSize="@dimen/textsub"
+			android:layout_alignRight="@+id/txtKeteranganYou"
+			android:layout_below="@id/txtKeteranganYou"
+			android:layout_marginTop="5dp"
+			android:text="@string/timeView" />
+
+
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageTextFrom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp" >
+
+		<com.alexzh.circleimageview.CircleImageView
+			android:id="@+id/imgUserFrom"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginRight="5dp"
+			android:src="@drawable/logo_grayscale" />
+
+		<customfonts.MyTextView
+			android:id="@+id/txtKeteranganFrom"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:maxWidth="220dp"
+			android:padding="10dp"
+			android:background="@drawable/message_from_bg"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@+id/imgUserFrom"
+			android:text="@string/listdata_alamat"
+			android:textColor="@color/Tex"
+			android:textSize="@dimen/textsub" />
+
+		<customfonts.MyTextView
+			android:id="@+id/txtPostByFrom"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/textSub"
+			android:textSize="@dimen/textsub"
+			android:layout_alignLeft="@+id/txtKeteranganFrom"
+			android:layout_below="@id/txtKeteranganFrom"
+			android:layout_marginTop="5dp"
+			android:text="@string/timeView" />
+
+	</RelativeLayout>
+
+</LinearLayout>

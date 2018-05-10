@@ -1,0 +1,270 @@
+<resources>
+
+    <string name="app_id">1874726539438323</string>
+    <string name="app_name">Gomocart</string>
+    <string name="add_group_title">Tambah Group</string>
+    <string name="pick_group_title">Group List</string>
+    <string name="add_transaksi_title">Transaksi Baru</string>
+    <string name="nol">00</string>
+    <string name="message_to">081373011823</string>
+    <string name="message_send">Message to send.</string>
+    <string name="message_datetime">00:00</string>
+    <string name="datepicker">Datepicker</string>
+
+    <string name="action_add">Baru</string>
+    <string name="action_transaksi">Transaksi</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_setting">Setting</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_save_image">Save Image</string>
+
+    <string name="groups_jumlah_nomer">0 Nomer</string>
+    <string name="groups_nama_group">Nama</string>
+    <string name="groups_pejelasan_group">Keterangan</string>
+
+    <string name="nama_operator">Nama Operator</string>
+    <string name="generate_pengaturan_prolog">Ubah format pesan dan set sesuai yang diinginkan sebelum diproses.</string>
+    <string name="generate_pengaturan_format">Format Pesan</string>
+    <string name="generate_pengaturan_format_prolog">gunakan parameter [QRCODE] untuk nilai QR Code dan [SET] untuk nilai set.</string>
+    <string name="generate_pengaturan_set">Set Pesan</string>
+    <string name="generate_pengaturan_set_prolog">Gunakan dengan tanda "-" untuk memisahkan set.</string>
+    <string name="generate_pengaturan_start_set">Dimulai dari set ke</string>
+    <string name="generate_pengaturan_generate">Generate</string>
+
+    <string name="action_generate_cancel">Batal</string>
+    <string name="action_generate_submit">Submit</string>
+    <string name="generate_scan">Scan Barcode</string>
+
+    <string name="pengaturan_prolog">Parameter yang diperlukan untuk proses pengiriman pesan.</string>
+    <string name="pengaturan_katakunci_1">Pencocokan balasan 1</string>
+    <string name="pengaturan_katakunci_2">Pencocokan balasan 2</string>
+    <string name="pengaturan_katakunci_3">Pencocokan balasan 3</string>
+    <string name="pengaturan_delay">Waktu tunggu balasan</string>
+    <string name="pengaturan_delay_prolog">Isi waktu tunggu balasan dalam detik.</string>
+    <string name="pengaturan_tindakan">Tindakan</string>
+    <string name="pengaturan_tindakan_prolog">Tindakan apabila waktu tunggu balasan habis.</string>
+    <string name="pengaturan_nomer_tujuan">No. Tujuan Pengiriman pesan</string>
+    <string name="pengaturan_nomer_sn_sim">Nomer Serial Kartu SIM Pengirim</string>
+
+    <string name="gantipassword_prolog">Silahkan masukan password lama kemudian isi password baru dan konfirmasi.</string>
+    <string name="gantipassword_katakunci_1">Password Lama</string>
+    <string name="gantipassword_katakunci_2">Password Baru</string>
+    <string name="gantipassword_katakunci_3">Konfirmasi Password</string>
+    <string name="ganti">Ubah Password</string>
+
+    <string name="contact_nama">Nama</string>
+    <string name="contact_nomer">Nomer</string>
+    <string name="detail_harga">Rp. 12.000</string>
+
+    <string name="listdata_alamat">Jalan Sukamaju Baru Komplek Damai Blok C7 Citeureup Bogor.</string>
+    <string name="listdata_nama">Nama Tempat</string>
+
+    <string name="alamat_nama">Nama Alamat</string>
+
+    <string name="masukan_password">Masukan Password</string>
+    <string name="submit">Submit</string>
+
+    <string name="nomer_telp">Nomer Hp</string>
+    <string name="pembeli">Nama Pembeli</string>
+    <string name="operator">Operator</string>
+    <string name="nominal">Nominal</string>
+    <string name="server">Sever</string>
+    <string name="sms_center">SMS Center</string>
+    <string name="jenis_transaski">Jenis Transaksi</string>
+    <string name="sim">Kartu Sim</string>
+    <string name="pin">Pin</string>
+
+    <string name="kirim">Kirim</string>
+    <string name="batal">Batal</string>
+
+    <string name="simpan">Simpan</string>
+    <string name="reload">Reload</string>
+
+    <string name="list_dialog_title">Title Dialog</string>
+    <string name="user">User</string>
+    <string name="group">Group</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="timeView">10:52</string>
+    <string name="messageView">Hello How Are You? Hello How Are You? Hello How Are You? Hello How Are You? Hello How Are You?</string>
+    <string name="grand_total">GRAND TOTAL:</string>
+    <string name="subtotal">SUB TOTAL:</string>
+    <string name="lunas">Lunas</string>
+
+    <string name="id_pelanggan">Id Pelanggan</string>
+    <string name="filter_inbox">Penyaringan Pesan Masuk</string>
+    <string name="katakunci_sukses">Katakunci Transaksi sukses</string>
+    <string name="katakunci_gagal">Katakunci Transaksi gagal</string>
+    <string name="about">About:</string>
+    <string name="subject">Subject:</string>
+    <string name="message">Isi Pesan:</string>
+
+    <string name="title">Title Detail</string>
+    <string name="detail">Ini adalah text detail</string>
+
+    <string name="berita_item_judul">Judul Berita</string>
+    <string name="berita_item_tanggal">Tanggal Berita</string>
+    <string name="berita_item_konten">Konten Berita</string>
+
+    <string name="isi_about">This is about content.</string>
+    <string name="office_hour">Office Hour:</string>
+    <string name="isi_office_hour">This is content of office hour.</string>
+    <string name="address">Address:</string>
+    <string name="isi_address">This is content of address.</string>
+    <string name="contact">Contact:</string>
+    <string name="isi_contat">This is Contact content.</string>
+    <string name="phone">Phone:</string>
+    <string name="isi_phone">This is phone content.</string>
+    <string name="back"> </string>
+    <string name="profile">Profil</string>
+    <string name="nama_klien">Nama Klien</string>
+    <string name="email_klien">Nama Klien</string>
+    <string name="location">Lokasi</string>
+    <string name="category">Kategori</string>
+    <string name="cat">Cat:</string>
+    <string name="periksa_koneksi">Periksa koneksi &amp; coba lagi</string>
+    <string name="coba_lagi">Coba Lagi</string>
+    <string name="message_header_title">Pesan</string>
+    <string name="daftar_kategori_produk_title">Kategori Produk</string>
+    <string name="daftar_produk_title">Semua Produk</string>
+    <string name="detail_produk_title">Detail Produk</string>
+    <string name="cart_title">Keranjang Belanja</string>
+    <string name="checkout_title">Checkout</string>
+    <string name="pembayaran_title">Konfirmasi Pembayaran</string>
+    <string name="my_wishlist_title">My Wishlist</string>
+    <string name="message_title">Message</string>
+    <string name="pesanan_title">Histori Pesanan</string>
+    <string name="gantipassword_title">Ganti Password</string>
+    <string name="editprofile_title">Edit Profil</string>
+
+    <string name="data_perusahaan_title">Data Perusahaan</string>
+    <string name="data_produk_title">Daftar Produk</string>
+    <string name="category_title">Category</string>
+    <string name="lokasi_title">Group By Location</string>
+    <string name="call_notif_title">Telepon Notifikasi</string>
+    <string name="search_title">Search</string>
+    <string name="search_nama_toko_usaha">Nama Toko / Usaha:</string>
+    <string name="search_kategori">Kategori:</string>
+    <string name="search_lokasi">Lokasi:</string>
+    <string name="search_btn_search">Search</string>
+    <string name="no_result">Tidak ada data!</string>
+
+    <string name="edit_profil_title">Edit Profil</string>
+    <string name="ganti_password_title">Ganti Password</string>
+    <string name="old_password">Password Lama:</string>
+    <string name="new_password">Password Baru:</string>
+    <string name="konfirmasi_password">Konfirmasi Password:</string>
+
+    <string name="app_desc">Rumahnya berbagai direktori tempat dan bisnis di Indonesia</string>
+
+    <string name="login_desc">Gratis biaya registrasi, tekan Sign Up</string>
+    <string name="signup_nama">Nama</string>
+    <string name="signup_photo">Photo</string>
+    <string name="signup_upload">Upload</string>
+    <string name="login_email">E-mail ID</string>
+    <string name="login_password">Password</string>
+    <string name="login_bantuan">Need a Help!</string>
+    <string name="login_sign_in">LOGIN</string>
+    <string name="login_forget_password">Lupa Password!</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="bantuan_detail">Jika Anda ada: \n- Pertanyaan \n- Butuh bantuan \n- Lupa password \n- atau masalah lain, \n\nSegera hubungi kami di: \nofficial.rumahdirektori@gmail.com</string>
+    <string name="user_profil">User</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="send_mail_to">Mail To:</string>
+    <string name="send_mail_from">Mail From:</string>
+    <string name="send_mail_subject">Subject:</string>
+    <string name="send_mail_message">Message:</string>
+    <string name="tanya_kami">Tanya Kami</string>
+    <string name="produk_kami">Produk Kami</string>
+    <string name="telepon_kami">Telepon Kami</string>
+
+    <string name="produk_dashboard_item_title">Title</string>
+    <string name="produk_dashboard_item_subtitle">Sub Title</string>
+    <string name="btn_left">Left</string>
+    <string name="btn_right">Right</string>
+    <string name="perusahaan_terbaru">PERUSAHAAN TERBARU</string>
+    <string name="produk_terbaru">PRODUK TERBARU</string>
+    <string name="kategori_keterangan">Keterangan Items</string>
+    <string name="jumlah">(0)</string>
+
+    <string name="edit_profil_upload">Upload</string>
+    <string name="edit_profil_nama_lengkap">Nama Lengkap:</string>
+    <string name="edit_profil_alamat">Alamat:</string>
+    <string name="edit_profil_kode_pos">Kode Pos:</string>
+
+    <string name="edit_profil_propinsi">Propinsi:</string>
+    <string name="edit_profil_kota">Kota:</string>
+    <string name="edit_profil_kecamatan">Kecamatan:</string>
+
+    <string name="edit_profil_tanggal_lahir">Tanggal Lahir:</string>
+    <string name="edit_profil_no_telp">No. Telepon:</string>
+    <string name="edit_profil_no_handphone">No. Handphone:</string>
+    <string name="lebih_besar">></string>
+
+    <string name="load_more_produk">Produk Lainnya</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="app_lupa_password_desc">Masukan email terdaftar untuk melakukan reset password.</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="konten">Isi pesan</string>
+    <string name="dari">Dari</string>
+    <string name="balas">Balas</string>
+    <string name="no_found">Hasil pencarian tidak ditemukan!</string>
+
+    <string name="notifikasi_item_judul">Judul Notifikasi</string>
+    <string name="notifikasi_item_tanggal">Tanggal Notifikasi</string>
+    <string name="notifikasi_item_konten">Konten Notifikasi</string>
+    <string name="message_item_tanggal">Tanggal Message</string>
+    <string name="message_item_konten">Konten Message</string>
+
+
+    <string name="from_gallery">GALLERY</string>
+    <string name="from_camera">CAMERA</string>
+    <string name="save_image">Simpan Gambar</string>
+
+    <string name="signup"><b><u>Sign up Now</u></b></string>
+    <string name="signin"><u><b>Sign in</b></u></string>
+    <string name="tandc"><u>syarat &amp; ketentuan</u></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="code"><u>code</u></string>
+
+    <string name="totalpayable"><b>Grand Total</b></string>
+    <string name="totalpayableamount"><b>0</b></string>
+    <string name="placeorder"><b>PLACE ORDER</b></string>
+    <string name="proses_checkout"><b>PROSES CHECKOUT</b></string>
+    <string name="description"><i>2.5GHz dual-core Intel Core i5 Tourbo Boost up to 3.1GHz</i></string>
+    <string name="shiping"><i><b>Shipping next week (exited?)</b></i></string>
+
+    <string name="msg_token_fmt" translatable="false">%s</string>
+
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_kategori">Kategori</string>
+    <string name="menu_produk">Produk</string>
+    <string name="menu_checkout">Keranjang Belanja</string>
+    <string name="menu_wishlist">Wishlist</string>
+    <string name="menu_ongkir">Ongkos Kirim</string>
+    <string name="menu_order">Daftar Pesanan</string>
+    <string name="menu_perpesanan">Perpesanan</string>
+    <string name="menu_informasi">Informasi</string>
+    <string name="menu_notifikasi">Notifikasi</string>
+    <string name="menu_hubungi_pengembang">Hubungi Pengembang</string>
+    <string name="menu_more">More</string>
+
+
+
+
+
+
+</resources>

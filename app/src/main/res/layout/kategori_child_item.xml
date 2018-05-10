@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+	<customfonts.MyTextView
+		android:id="@+id/txtKeterangan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@+id/checkbox"
+		android:text="@string/kategori_keterangan"
+		android:textColor="@color/category_textcolour"
+		android:textSize="14sp"
+		android:paddingTop="10dp" />
+
+	<CheckBox
+		android:id="@+id/checkbox"
+		android:focusable="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:theme="@style/checkBoxStyle"
+		android:layout_marginLeft="25dp" />
+
+
+
+</RelativeLayout>

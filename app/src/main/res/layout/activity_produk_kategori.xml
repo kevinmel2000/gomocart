@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_background"  >
+
+	<include
+		layout="@layout/toolbar"
+		android:id="@+id/toolbar" >
+	</include>
+
+	<TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/card_background"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/daftar_produk_title"
+        android:textColor="@color/actionbar"
+        android:textSize="18sp" />
+
+	<GridView
+	    android:id="@+id/gridViewProduk"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/loadMask"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/txtTitle"
+	    android:layout_margin="5dp"
+	    android:divider="@null"
+	    android:horizontalSpacing="5dp"
+	    android:numColumns="2"
+	    android:verticalSpacing="5dp" />
+    
+    <ProgressBar
+        android:id="@+id/pgbarLoading"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/loadMask"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/periksa_koneksi"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_lightgray"
+            android:text="@string/coba_lagi"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

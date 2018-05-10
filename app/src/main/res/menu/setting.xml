@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_yes"
+    	android:icon="@drawable/yes_32_white"
+        android:title="@string/simpan"
+        android:showAsAction="always" />
+
+</menu>

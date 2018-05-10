@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AktivasiSmsActivity">
+
+    <include layout="@layout/toolbar_activity_aktivasi_sms"
+        android:id="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" >
+
+
+            <customfonts.MyTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukan kode aktivasi yang telah dikirim melalui sms."
+                android:textColor="@color/textSub"
+                android:textSize="@dimen/textsub"
+                android:gravity="left"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginBottom="20dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/kode_aktivasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorhint"
+                android:textColor="@color/colortext">
+
+                <customfonts.MyEditText
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode Aktivasi"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginRight="46dp"
+                    android:textColorHint="@color/textSub"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="14dp"
+                    android:gravity="left"
+                    android:lines="1"
+                    android:drawableLeft="@drawable/profil_kata_sandi"
+                    android:drawablePadding="12dp"
+                    android:id="@+id/edit_kode_aktivasi" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_height="1dp"
+                android:background="@color/red" />
+
+
+
+
+            <customfonts.MyTextView
+                android:id="@+id/proses_aktivasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect1"
+                android:text="AKTIVASI"
+                android:textSize="@dimen/text"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="1.5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

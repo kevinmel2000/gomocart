@@ -1,0 +1,15 @@
+/* Just to center the spinner in the page */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* make it more visible for the demo */
+svg {
+  transform: scale(2);
+}

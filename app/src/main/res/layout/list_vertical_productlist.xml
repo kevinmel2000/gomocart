@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rect"
+        android:padding="10dp" >
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_grayscale" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/like"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp" >
+
+                            <ImageView
+                                android:id="@+id/fav1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/f0" />
+
+                            <ImageView
+                                android:id="@+id/fav2"
+                                android:visibility="gone"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/f4" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right" >
+
+                        <LinearLayout
+                            android:id="@+id/linear_soldout"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:background="@color/produk_soldout"
+                            android:layout_marginRight="5dp" >
+
+                            <customfonts.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Habis"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="@dimen/textsub" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_new"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:background="@color/produk_new"
+                            android:layout_marginRight="5dp" >
+
+                            <customfonts.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="NEW"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="@dimen/textsub" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_grosir"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:background="@color/produk_grosir"
+                            android:layout_marginRight="5dp" >
+
+                            <customfonts.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Grosir"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="@dimen/textsub" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_preorder"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:background="@color/produk_po"
+                            android:layout_marginRight="5dp" >
+
+                            <customfonts.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="PO"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="@dimen/textsub" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_discount"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:background="@color/produk_diskon"  >
+
+                            <customfonts.MyTextView
+                                android:id="@+id/discount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0%"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="@dimen/textsub" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_freeongkir"
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="right"
+                            android:background="@color/produk_freeongkir"
+                            android:layout_marginRight="5dp" >
+
+                            <customfonts.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Free Ongkir"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="@dimen/textsub" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <customfonts.MyTextView
+                    android:id="@+id/title"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Canvera Black Heel"
+                    android:textSize="15dp"
+                    android:textColor="@color/Tex" />
+
+                <!-- LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/ratingtext"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="(1400)"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/textSub"
+                        android:layout_marginTop="1dp" />
+                </LinearLayout -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <customfonts.MyTextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15,000 Rs"
+                        android:textSize="@dimen/textsub"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:layout_gravity="center_vertical|left" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/cutprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17,000 Rs"
+                        android:textSize="@dimen/textsub"
+                        android:textColor="@color/textSub"
+                        android:paddingBottom="5dp"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <!-- LinearLayout
+                        android:id="@+id/linear_soldout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_soldout" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <customfonts.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Habis"
+                                android:textColor="#fff"
+                                android:layout_gravity="center" />
+
+                        </FrameLayout>
+                    </LinearLayout -->
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

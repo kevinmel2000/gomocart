@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPesananActivity"
+    android:background="#f2f3f4" >
+
+    <include
+        layout="@layout/toolbar_activity_detail_pesanan"
+        android:id="@+id/toolbar"></include>
+
+    <ScrollView
+        android:id="@+id/detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--*********ALAMAT TUJUAN***********-->
+            <LinearLayout
+                android:id="@+id/linear_alamat_pengiriman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"  >
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Tujuan"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24-b Baker Street, \nIndiana Trail, Manjalpur, \nGujarat, India, 390011 "
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/textsub"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="3dp" />
+            </LinearLayout>
+
+            <!--*********DROPSHIPER***********-->
+            <LinearLayout
+                android:id="@+id/linear_dropshiper"
+                android:layout_below="@+id/linear_alamat_pengiriman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"  >
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dropship"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/dropship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama: Dropshiper \nNo. HP: 08123"
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/textsub"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:lineSpacingExtra="3dp" />
+            </LinearLayout>
+
+            <!--*********EXPEDISI PENGIRIMAN***********-->
+            <LinearLayout
+                android:id="@+id/linear_expedisi_pengiriman"
+                android:layout_below="@+id/linear_dropshiper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"  >
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expedisi Pengiriman"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" >
+
+                    <ImageView
+                        android:id="@+id/image_expedisi"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/logo_grayscale"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_vertical"  />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/expedisi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="TIKI\nReguler Service (2 hari)\nRp. 65.0000"
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub"
+                        android:layout_marginLeft="10dp"
+                        android:lineSpacingExtra="3dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--*********METODE PEMBAYARAN***********-->
+            <LinearLayout
+                android:id="@+id/linear_pembayaran"
+                android:layout_below="@+id/linear_expedisi_pengiriman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"  >
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pembayaran"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/metode_pembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer Bank: "
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/textsub"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingExtra="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" >
+
+                    <ImageView
+                        android:id="@+id/image_pembayaran"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/logo_grayscale"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_vertical"  />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/pembayaran"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Bank\nReguler Service (2 hari)\nRp. 65.0000"
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub"
+                        android:layout_marginLeft="10dp"
+                        android:lineSpacingExtra="3dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--*********DETAIL PESANAN***********-->
+            <LinearLayout
+                android:id="@+id/linear_detail_pesanan"
+                android:layout_below="@+id/linear_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"  >
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Pesanan"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp" />
+
+                <gomocart.application.com.libs.ExpandableHeightListView
+                    android:id="@+id/lisview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:divider="@null" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <!--TOTAL -->
+                    <customfonts.MyTextView
+                        android:id="@+id/label_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Total Pesanan:"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="16dp" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/rp_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Rp."
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/total"
+                        android:layout_alignLeft="@+id/rp_grandtotal" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="0"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true" />
+
+                    <!--DISKON -->
+                    <customfonts.MyTextView
+                        android:id="@+id/label_diskon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Voucher:"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/label_total"
+                        android:layout_alignLeft="@+id/label_total"  />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/rp_diskon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Rp."
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/diskon"
+                        android:layout_below="@+id/rp_total"
+                        android:layout_alignLeft="@+id/rp_total" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/diskon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="0"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/total" />
+
+                    <!--****** SUB TOTAL ********-->
+                    <customfonts.MyTextView
+                        android:id="@+id/label_subtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Sub Total:"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/label_diskon"
+                        android:layout_alignLeft="@+id/label_diskon" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/rp_subtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Rp."
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/subtotal"
+                        android:layout_below="@+id/rp_diskon"
+                        android:layout_alignLeft="@+id/rp_diskon" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/subtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="0"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/diskon" />
+
+                    <!--****** BIAYA KIRIM ********-->
+                    <customfonts.MyTextView
+                        android:id="@+id/label_biayakirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Biaya Kirim:"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/label_subtotal"
+                        android:layout_alignLeft="@id/label_subtotal" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/rp_biayakirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Rp."
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/biayakirim"
+                        android:layout_below="@+id/rp_subtotal"
+                        android:layout_alignLeft="@+id/rp_subtotal" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/biayakirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="0"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/subtotal" />
+
+                    <!--****** GRAND TOTAL ********-->
+                    <customfonts.MyTextView
+                        android:id="@+id/label_grandtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Grand Total:"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/label_biayakirim"
+                        android:layout_alignLeft="@+id/label_biayakirim" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/rp_grandtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="Rp."
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/grandtotal"
+                        android:layout_below="@+id/rp_biayakirim" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/grandtotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text"
+                        android:text="10.000.000"
+                        android:textColor="@color/Tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/biayakirim" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_selesai"
+                android:layout_below="@id/linear_detail_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:paddingBottom="16dp" >
+
+                <customfonts.MyTextView
+                    android:id="@+id/selesai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SELESAI"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:drawableTint="#ffffff"
+                    android:background="@color/red" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pgbarLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/loadMask"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/periksa_koneksi"
+            android:textColor="@color/white" />
+
+        <customfonts.MyTextView
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_lightgray"
+            android:text="@string/coba_lagi"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

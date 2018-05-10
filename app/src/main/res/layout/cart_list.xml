@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rect"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <gomocart.application.com.libs.ResizableImageView
+                android:id="@+id/image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_grayscale" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp" >
+
+                <customfonts.MyTextView
+                    android:id="@+id/title"
+                    android:maxLines="2"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lemon peel Base ball"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/hapus"
+                    android:layout_marginTop="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cross_delete"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/hapus"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/title" >
+
+                    <ImageView
+                        android:id="@+id/min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minus"
+                        android:layout_gravity="center"
+                        android:padding="5dp"/>
+
+                    <customfonts.MyTextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="01"
+                        android:textSize="@dimen/textsub"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/Tex"
+                        android:padding="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plus"
+                        android:layout_gravity="center"
+                        android:padding="5dp" />
+
+                    <View
+                        android:id="@+id/separator_ukuran"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/ukuran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Ukuran"
+                        android:textColorHint="@color/textSub"
+                        android:background="#00000000"
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/textsub"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp"  />
+
+                    <View
+                        android:id="@+id/separator_warna"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+
+
+                    <customfonts.MyTextView
+                        android:id="@+id/warna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Warna"
+                        android:textColorHint="@color/textSub"
+                        android:background="#00000000"
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/textsub"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/title" >
+
+            <customfonts.MyTextView
+                android:id="@+id/price"
+                android:textSize="@dimen/textsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 250.00"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/Tex" />
+
+            <customfonts.MyTextView
+                android:id="@+id/diskon"
+                android:textSize="@dimen/textsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 250.00"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/Tex" />
+
+            <customfonts.MyTextView
+                android:id="@+id/total"
+                android:textSize="@dimen/textsub"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="$ 250.00"
+                android:gravity="right"
+                android:textColor="@color/Tex" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

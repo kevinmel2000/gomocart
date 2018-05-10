@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:padding="@dimen/menu_layoutpading" >
+
+	<ImageView
+		android:id="@+id/image_menu"
+		android:layout_weight="6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:src="@drawable/blankicon"  />
+
+	<customfonts.MyTextView
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/text_menu"
+		android:textColor="@color/category_textcolour"
+		android:textSize="@dimen/menu_text"
+		android:layout_marginLeft="@dimen/menu_textpading" />
+
+</LinearLayout>

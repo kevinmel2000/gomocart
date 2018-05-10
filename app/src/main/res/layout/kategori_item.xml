@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<com.application.gomocart.libs.ResizableImageView
+	    android:id="@+id/gambar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/card_background"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/logo_grayscale" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/gambar"
+	    android:layout_alignLeft="@+id/gambar"
+	    android:layout_alignRight="@+id/gambar"
+	    android:layout_alignTop="@+id/gambar"
+	    android:background="#1A000000" />
+
+	<TextView
+	    android:id="@+id/nama"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:gravity="center_horizontal"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:text="@string/produk_dashboard_item_title"
+	    android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rect"
+    android:elevation="2dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <com.alexzh.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_grayscale"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <customfonts.MyTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Tshirt"
+        android:textSize="12dp"
+        android:textColor="@color/category_textcolour"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+    </customfonts.MyTextView>
+
+</LinearLayout>

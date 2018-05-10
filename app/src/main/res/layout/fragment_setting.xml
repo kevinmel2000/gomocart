@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rect"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp" >
+
+                <!-- suara getar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_suara_getar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/setting_notifikasi"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorhint"
+                            android:textColor="@color/colortext">
+
+                            <customfonts.MyEditText
+                                android:textSize="@dimen/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Notifikasi"
+                                android:textColorHint="@color/textSub"
+                                android:textColor="@color/Tex"
+                                android:background="#0000"
+                                android:padding="10dp"
+                                android:gravity="left"
+                                android:editable="false"
+                                android:inputType="none"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:id="@+id/edit_notifikasi" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageButton
+                            android:id="@+id/drop_notifikasi"
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/down"
+                            android:padding="10dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/checkboxdefault_update_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/checkBoxStyle"  />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/update_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemberitahuan Update Pesanan."
+                        android:textColor="@color/textSub"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textsub" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/checkboxdefault_informasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/checkBoxStyle" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/informasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemberitahuan Informasi."
+                        android:textColor="@color/textSub"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textsub" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/checkboxdefault_notifikasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/checkBoxStyle"  />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/notifikasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemberitahuan Notifikasi."
+                        android:textColor="@color/textSub"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textsub" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/checkboxdefault_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/checkBoxStyle"  />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemberitahuan Percakapan."
+                        android:textColor="@color/textSub"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textsub" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--****** save and continue **********-->
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_below="@id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="16dp" >
+
+                <customfonts.MyTextView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UBAH"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/text"
+                    android:background="@drawable/btn_red"
+                    android:paddingLeft="45dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="45dp"
+                    android:gravity="center"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

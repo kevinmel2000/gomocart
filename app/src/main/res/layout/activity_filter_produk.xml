@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".FilterProdukActivity"
+    android:background="#f2f3f4" >
+
+    <include
+        layout="@layout/toolbar_activity_filter_produk"
+        android:id="@+id/toolbar"></include>
+
+    <View
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider" />
+
+    <LinearLayout
+        android:layout_below="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/categoriesbg1" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <customfonts.MyTextView
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KATEGORI"
+                        android:textColor="@color/Tex"
+                        android:padding="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/brands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MEREK"
+                        android:textColor="@color/Tex"
+                        android:padding="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UKURAN"
+                        android:textColor="@color/Tex"
+                        android:padding="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/colour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WARNA"
+                        android:textColor="@color/Tex"
+                        android:padding="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HARGA"
+                        android:textColor="@color/Tex"
+                        android:padding="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DISKON"
+                        android:textColor="@color/Tex"
+                        android:padding="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider" />
+
+                </LinearLayout>
+
+                <customfonts.MyTextView
+                    android:id="@+id/clearall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CLEAR ALL"
+                    android:textColor="@color/White"
+                    android:padding="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fffdfe" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f3f4" >
+
+                <LinearLayout
+                    android:id="@+id/categorylist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ExpandableListView
+                        android:id="@+id/categorylistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="#00000000"
+                        android:background="#f2f3f4"
+                        android:layout_marginBottom="45dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brandlist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/brandlistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="#00000000"
+                        android:background="#f2f3f4"
+                        android:layout_marginBottom="45dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sizelist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/sizelistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="#00000000"
+                        android:background="#f2f3f4"
+                        android:layout_marginBottom="45dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/colourlist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/colourlistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="#00000000"
+                        android:background="#f2f3f4"
+                        android:layout_marginBottom="45dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pricelist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <gomocart.application.com.libs.RangeBar
+                        android:layout_marginTop="26dp"
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/pricerangebar"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:tickStart="0"
+                        custom:tickInterval="1"
+                        custom:tickEnd="100"
+                        custom:pinMaxFont="10sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/pricepbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingRight="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_below="@+id/rangebar1"
+                        android:layout_marginBottom="10dp" >
+
+                        <Button
+                            android:clickable="false"
+                            android:id="@+id/pricerang1"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textSize="16dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Rp. 0"
+                            android:background="#fcfcfc"
+                            android:textColor="@color/Tex" />
+
+                        <Button
+                            android:clickable="false"
+                            android:id="@+id/pricerang2"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textSize="16dp"
+                            android:text="Rp. 1,000,000"
+                            android:layout_marginLeft="10dp"
+                            android:background="#fcfcfc"
+                            android:textColor="@color/Tex" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/discountlist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+
+                    <gomocart.application.com.libs.RangeBar
+                        android:layout_marginTop="26dp"
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/discountrangebar"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:tickStart="0"
+                        custom:tickInterval="1"
+                        custom:tickEnd="100"
+                        custom:pinMaxFont="10sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/discountpbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingRight="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_below="@+id/rangebar1"
+                        android:layout_marginBottom="10dp" >
+
+                        <Button
+                            android:clickable="false"
+                            android:id="@+id/discountrang1"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textSize="16dp"
+                            android:layout_marginRight="10dp"
+                            android:text="0 %"
+                            android:background="#fcfcfc"
+                            android:textColor="@color/Tex" />
+
+                        <Button
+                            android:clickable="false"
+                            android:id="@+id/discountrang2"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textSize="16dp"
+                            android:text="100 %"
+                            android:layout_marginLeft="10dp"
+                            android:background="#fcfcfc"
+                            android:textColor="@color/Tex" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <customfonts.MyTextView
+                    android:id="@+id/apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="APPLY"
+                    android:textColor="@color/White"
+                    android:padding="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/green"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

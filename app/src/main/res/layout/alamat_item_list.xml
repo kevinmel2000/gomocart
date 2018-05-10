@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:padding="10dp" >
+
+        <customfonts.MyTextView
+            android:id="@+id/txtNamaAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/alamat_nama"
+            android:textColor="#000000"
+            android:textSize="@dimen/text" />
+        
+        <customfonts.MyTextView
+            android:id="@+id/txtDetailAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNamaAlamat"
+            android:layout_alignLeft="@+id/txtNamaAlamat"
+            android:layout_alignRight="@+id/txtNamaAlamat"
+            android:text="@string/listdata_alamat"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/Tex" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_below="@id/txtDetailAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e5ea"/>
+
+        <LinearLayout
+            android:layout_below="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" >
+
+            <CheckBox
+                android:id="@+id/checkbox_as_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/checkBoxStyle" />
+
+            <customfonts.MyTextView
+                android:id="@+id/utamakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UTAMAKAN"
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text"
+                android:gravity="center_vertical" />
+
+            <customfonts.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <customfonts.MyTextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UBAH"
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp" />
+
+            <customfonts.MyTextView
+                android:id="@+id/hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HAPUS"
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

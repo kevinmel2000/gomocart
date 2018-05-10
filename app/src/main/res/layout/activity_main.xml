@@ -1,0 +1,551 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar" >
+        </include>
+
+        <!-- Framelayout to display Fragments -->
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar" />
+
+    </RelativeLayout>
+ 
+    <!-- The navigation drawer -->
+    <LinearLayout
+        android:id="@+id/drawerPane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_gravity="start"
+        android:background="@color/cattextcolour">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:background="@color/droverbackground"
+            android:paddingBottom="10dp">
+
+            <com.alexzh.circleimageview.CircleImageView
+                android:id="@+id/banar1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/userdefault"
+                app:view_shadowRadius="1dp"
+                android:layout_gravity="center"
+                app:view_shadowDx="1dp"
+                app:view_shadowDy="0dp"
+                app:view_borderWidth="0dp"
+                app:view_borderColor="#cccccc"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <customfonts.MyTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banar1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/cattextcolour"
+                android:textSize="15dp"
+                android:text="Tamu" />
+
+            <!-- LinearLayout
+                android:id="@+id/lin_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" >
+
+                <ImageView
+                    android:id="@+id/nav_setting"
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/settingsmenu" />
+
+            </LinearLayout -->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/White"
+            android:layout_height="wrap_content">
+
+            <!-- LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/lin_login"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/image_menu_login"
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/menu_login" />
+
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk"
+                    android:textSize="@dimen/menu_textpading"
+                    android:letterSpacing="0.025"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:textColor="@color/textSub"
+                    android:layout_gravity="center"
+                    android:id="@+id/nav_login" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/list_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/lin_register"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/image_menu_profil"
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/profil_profil_diri" />
+
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar"
+                    android:letterSpacing="0.025"
+                    android:textSize="@dimen/menu_textpading"
+                    android:textColor="@color/textSub"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:layout_gravity="center"
+                    android:id="@+id/nav_register" />
+
+            </LinearLayout>
+
+            <!-- View
+                android:id="@+id/sparator_alamat"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/list_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/lin_alamat"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/menucat_imgtopmargin"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/map_markermenu" />
+
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:letterSpacing="0.025"
+                    android:textSize="@dimen/menu_textpading"
+                    android:textColor="@color/textSub"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:layout_gravity="center"
+                    android:id="@+id/nav_alamat" />
+
+            </LinearLayout -->
+
+            <!-- /LinearLayout -->
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_divider" />
+
+        <ExpandableListView
+            android:id="@+id/moremenulistview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:groupIndicator="@null" />
+
+        <!-- ScrollView
+            android:id="@+id/scroll_sidemenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/cattextcolour" >
+
+                <LinearLayout
+                    android:id="@+id/menu_beranda"
+                    android:layout_marginTop="@dimen/menu_layouttopmargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_beranda"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Beranda"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_kategori"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Kategori"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_produk"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Produk"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/menu_cartlist"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_keranjang"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Keranjang Belanja"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_wishlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_wishlist"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Wishlist"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_ongkir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_ongkos_kirim"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Ongkos Kirim"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_daftar_pesanan"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Pesanan"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading"
+                    android:id="@+id/menu_chat" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_perpesanan"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Perpesanan"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading"
+                    android:id="@+id/menu_informasi" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_informasi"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Informasi"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading"
+                    android:id="@+id/menu_notifikasi" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_notifikasi"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Notifikasi"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu_kontak_pengembang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingRight="@dimen/menu_layoutpading"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/menu_layoutpading" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_hubungi_pengembang"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Hubungi Pengembang"
+                        android:textColor="@color/category_textcolour"
+                        android:textSize="@dimen/menu_text"
+                        android:layout_marginLeft="@dimen/menu_textpading"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView -->
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

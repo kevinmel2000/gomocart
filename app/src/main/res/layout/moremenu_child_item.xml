@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingTop="10dp"
+	android:paddingRight="@dimen/menu_layoutpading"
+	android:paddingBottom="10dp"
+	android:paddingLeft="@dimen/menu_layoutpading" >
+
+	<customfonts.MyTextView
+		android:layout_width="22dp"
+		android:layout_height="22dp"
+		android:text=""
+		android:layout_gravity="center" />
+
+	<customfonts.MyTextView
+		android:id="@+id/nama"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="wrap_content"
+		android:text="More"
+		android:textColor="@color/category_textcolour"
+		android:textSize="@dimen/menu_text"
+		android:layout_marginLeft="@dimen/menu_textpading"
+		android:layout_gravity="center_vertical" />
+
+</LinearLayout>
